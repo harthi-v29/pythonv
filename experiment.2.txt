@@ -1,0 +1,127 @@
+1.write a python program to accept a year and verify the given year is a leap year?
+program:
+num=int(input("enter the year:"))
+
+if num %4==0:
+ 
+   print("the given year is a leap year")
+
+else:
+
+   print("the given year is not a leap year")
+SAMPLE OUTPUT:
+enter the year:2028
+
+the given year is a leap year
+
+
+2.write a python program to accept a number and verify the 
+given number is in between 1 to 100?
+program:
+num=int(input("enter the number:"))
+
+if num>=1 and num<=100:
+
+    print("the given number is within the range")
+
+else:
+
+    print("the given number is not within the range")
+SAMPLE OUTPUT1:
+enter the number:90
+
+the given number is within the range
+SAMPLE OUTPUT2:
+enter the number:120
+
+the given number is not within the range
+
+
+3.write a python program to accept two numbers and verify the 
+biggest number among the two numbers?
+program:
+num1=int(input("enter the fisrt number:"))
+
+num2=int(input("enter the second number:"))
+
+if num1>num2:
+
+    print("num1 is biggest")
+
+else:
+
+    print("num2 is biggest")
+SAMPLE OUTPUT:
+enter the fisrt number:30
+
+enter the second number:40
+
+num2 is biggest
+
+
+4.write a python program to accept three numbers and find the 
+biggest among the three numbers?
+program:
+num1=int(input("enter the fisrt number:"))
+
+num2=int(input("enter the second number:"))
+
+num3=int(input("enter the third number:"))
+
+if num1>num2 and num1>num3:
+ 
+   print("num1 is biggest")
+
+elif num2>num3 and num2>num1:
+ 
+   print("num2 is biggest")
+
+else:
+
+   print("num3 is bigger")
+
+SAMPLE OUTPUT1:
+enter the fisrt number:45
+
+enter the second number:50
+
+enter the third number:67
+
+num3 is bigger
+SAMPLE OUTPUT2:
+enter the fisrt number:65
+
+enter the second number:40
+
+enter the third number:35
+
+num1 is biggest
+
+
+5.write a python program to accept a number and print respective word?
+program:
+n=eval(input("enter a number:"))
+
+if n==1:
+
+    print("one")
+
+elif n==2:
+
+    print("two")
+
+elif n==3:
+
+    print("three")
+
+elif n==4:
+
+    print("four")
+
+else:
+
+    print("number is unavailable")
+SAMPLE OUTPUT:
+enter a number:4
+
+four
