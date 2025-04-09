@@ -1,0 +1,308 @@
+1.write a python program to print numbers from 1 to 10 using for loop?
+program:
+for x in range(1,11):
+
+    print (x)
+SAMPLE OUTPUT:
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+2.write a python program to print odd numbers from 0 to 20?
+program:
+for x in range(0,21):
+
+  if x %2!=0:
+
+    print(x)
+SAMPLE OUTPUT:
+1
+
+3
+
+5
+
+7
+
+9
+
+11
+
+13
+
+15
+
+17
+
+19
+
+3.write a python program to print number from 10 to 1?
+program:
+for x in range(10,0,-1):
+
+  
+    print(x)
+SAMPLE OUTPUT:
+10
+
+9
+
+8
+
+7
+
+6
+
+5
+
+4
+
+3
+
+2
+
+1
+
+4.writw a python program to print numbers from 0 to 6 expect 3 and 5?
+Program:
+for x in range(0,7):
+   if x!=3 and x!=5:
+     print(x)
+SAMPLE OUTPUT:
+0
+
+1
+
+2
+
+4
+
+6
+
+5.write a python program to accept a list and print the list elements and
+ also find the sum of list elements using for loop?
+Program:
+list=input("enter the list elements").split()
+
+sum=0
+
+for x in list:
+
+    x=int(x)
+
+    sum=sum+x
+
+print(list)
+
+print("the sum of the list is:",sum)
+SAMPLE OUTPUT:
+enter the list elements1 4 6 7
+
+['1', '4', '6', '7']
+
+the sum of the list is: 18
+
+6.write a python program to accept a number and print multiplication 
+table of a given number?
+Program:
+n=int(input("enter the number"))
+
+for x in range(1,11):
+
+    print(n,"*",x,"=",n*x)
+SAMPLE OUTPUT:enter the number7
+
+7 * 1 = 7
+
+7 * 2 = 14
+
+7 * 3 = 21
+
+7 * 4 = 28
+
+7 * 5 = 35
+
+7 * 6 = 42
+
+7 * 7 = 49
+
+7 * 8 = 56
+
+7 * 9 = 63
+
+7 * 10 = 70 
+
+7.write a python program to accept a string and print every 
+character with their index number also?
+Program:
+a=input("enter a string:")
+
+for i in range(len(a)):
+
+    print("at index",i,"=",a[i])
+
+SAMPLE OUTPUT:
+enter a string:reddy
+
+at index 0 = r
+
+at index 1 = e
+
+at index 2 = d
+
+at index 3 = d
+
+at index 4 = y
+
+8.wrute a python program to find those numbers are divisible by 7
+and multiples of 5 in between 1 to 100 using for loop?
+Program:
+n=int(input("enter any number:"))
+
+for x in range(1,n+1):
+
+  if x%7==0and x%5==0:
+
+     print(x)
+SAMPLE OUTPUT:
+enter any number:100
+
+35
+
+70
+
+9.write a python program to accept four integer number and find among four
+integer number which is smaller one by using simple if statement?
+Program:
+n1=int(input("enter first number:"))
+
+n2=int(input("enter second number:"))
+
+n3=int(input("enter third number:"))
+
+n4=int(input("enter fourth number:"))
+
+S=n1
+
+if n2<S:
+
+    S=n2
+
+if n3<S:
+
+    S=n3
+
+if n4<S:
+
+    S=n4
+
+print("the smaller num is:",S)
+
+print("the smaller num is:",min(n1,n2,n3,n4))
+
+
+SAMPLE OUTPUT:
+enter first number:22
+
+enter second number:45
+
+enter third number:13
+
+enter fourth number:36
+
+the smaller num is: 13
+
+the smaller num is: 13
+
+10.write a python program to print numbers from 1 to 10 ?
+Program:
+x=1
+while x<=10:
+ print(x)
+ x=x+1
+SAMPLE OUTPUT:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+11.write a python program to accept a number and find the given number 
+is palindrome or not?
+Program:
+n=int(input("Enter any num:"))
+
+dup=n
+
+sum=0
+
+while n>0:
+
+    rem=n%10
+
+    sum=(sum*10)+rem
+
+    n=n//10
+
+if dup==sum:
+
+ print("given number is palindrome")
+
+else:
+
+ print("given number is not palindrome")
+SAMPLE OUTPUT:
+Enter any num:616
+
+given number is palindrome
+
+
+12.write a python program to accept a number and verify the given number
+is Armstrong or not?
+Program:
+n=int(input("Enter any number:"))
+
+dup=n
+
+sum=0
+
+while n>0:
+
+    rem=n%10
+
+    sum=sum+(rem**3)
+
+    n=n//10
+
+if dup==sum:
+
+ print("given number is Armstrong number")
+
+else:
+
+ print("given number is not Armstrong number")
+SAMPLE OUTPUT:
+Enter any number:153
+
+given number is Armstrong number
