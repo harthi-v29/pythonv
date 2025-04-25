@@ -89,7 +89,7 @@ enter the second value :6
 
 729000000
 
-1.3.write a phython program to prform Comparision operator?
+1.3.write a python program to prform Comparision operator?
 program1:
 a=50
 b=39
