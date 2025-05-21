@@ -1,0 +1,192 @@
+1.write a python program to find GCD of two numbers using function
+PROGRAM:
+def gcd(a,b):
+
+ while b!=0:
+
+    a,b=b,a%b
+
+    return a
+
+num1=int(input("enter the first number:"))
+
+num2=int(input("enter the second number:"))
+
+result=gcd(num1,num2)
+print("the GCD of",num1,"and",num2,"is",result)
+SAMPLE INPUT&OUTPUT:
+enter the first number:18
+
+enter the second number:36
+
+the GCD of 18 and 36 is 36
+
+2.write a python program to find even or odd numbers using function
+PROGRAM:
+def check_even_odd(number):
+
+    if number %2==0:
+
+        return "even"
+
+    else:
+
+        return "odd"
+
+num =int(input("enter a number:"))
+
+result=check_even_odd(num)
+
+print("the number is",result)
+SAMPLE INPUT&OUTPUT:
+enter a number:10
+
+the number is even
+
+
+3.write a python program to find factorial values 1 to 10 using function
+PROGRAM:
+def factorial(n):
+
+    if n==0:
+
+        return 1
+
+    else:
+
+        return n*factorial(n-1)
+
+for i in range(1,11):
+
+       result=factorial(i)
+
+       print("factorial of",i,"is",result)
+SAMPLE INPUT&OUTPUT:
+factorial of 1 is 1
+
+factorial of 2 is 2
+
+factorial of 3 is 6
+
+factorial of 4 is 24
+
+factorial of 5 is 120
+
+factorial of 6 is 720
+
+factorial of 7 is 5040
+
+factorial of 8 is 40320
+
+factorial of 9 is 362880
+
+factorial of 10 is 3628800
+
+4.write a python program to find factorial value of a given number using function
+PROGRAM:
+def factorial(n):
+
+    if n==0:
+
+        return 1
+ 
+   else:
+
+            return n*factorial(n-1)
+
+num=int(input("enter a number:"))
+
+result = factorial(num)
+
+print("the factorial of",num,"is",result)
+SAMPLE INPUT&OUTPUT:
+enter a number:6
+
+the factorial of 6 is 720
+
+5.write a python program to find sum of list using function
+PROGRAM:
+def calculate_sum(numbers):
+
+    total=0
+
+    for num in numbers:
+
+        total+=num
+
+    return total
+
+list=[]
+
+n=int(input("enter the number of elements in the list:"))
+
+for i in range(n):
+
+    num=eval(input("enter element{}:".format(i+1)))
+
+    list.append(num)
+
+    result=calculate_sum(list)
+
+print("the sum of the list is",result)
+SAMPLE INPUT&OUTPUT:
+enter the number of elements in the list:5
+
+enter element1:25
+enter element2:78
+
+enter element3:98
+
+enter element4:55
+
+enter element5:18
+
+the sum of the list is 274
+
+6.write a python program to perform arithmetic operations using functions
+PROGRAM:
+def add(x,y):
+
+    return x+y
+
+    def substract(x,y):
+
+        return x-y
+
+        def miltiply(x,y):
+
+            return x*y
+
+            def divide(x,y):
+
+              return x/y
+
+num1=float(input("enter the first number"))
+
+num2=float(input("enter the second number"))
+
+print("addition:",add(num1,num2))
+
+print("substraction:",substract(num1,num2))
+
+print("multiplication:",multiply(num1,num2))
+
+print("division:",divide(num1,num2))
+SAMPLE OUTPUT:
+enter the first number:10
+
+enter the second number:5
+
+addition: 15.0
+
+substraction: 5.0
+
+multiplication: 50.0
+
+division: 2.0
+
+
+
+
+
+
