@@ -18,7 +18,7 @@ enter numbers of your choice:1 2 3 4 5
 
 4
 
-2.write a pytrhon program to take a list and print the sum of the list
+2.write a python program to take a list and print the sum of the list
 Program:
 l=input("enter any number of your choice:").split()
 
