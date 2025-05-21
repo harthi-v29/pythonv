@@ -1,0 +1,224 @@
+1.write a python program to accept some list elements and print without odd numbers
+Program:
+l=input("enter numbers of your choice:").split()
+
+for x in l:
+
+    x=int(x)
+
+    if x%2==1:
+
+      continue
+
+    print(x)
+SAMPLE OUTPUT:
+enter numbers of your choice:1 2 3 4 5
+
+2
+
+4
+
+2.write a pytrhon program to take a list and print the sum of the list
+Program:
+l=input("enter any number of your choice:").split()
+
+sum=0
+
+for x in l:
+
+ x=int(x)
+
+ sum=sum+x
+
+print("the sum of the given list is:",sum)
+SAMPLE OUTPUT:
+enter any number of your choice:1 2 3 4
+
+the sum of the given list is: 10
+
+
+3.write a python program to accept a string and convert it into a list datatype
+Program:
+name=input("Enter any string:")
+
+l=list(name)
+
+print(l)
+SAMPLE OUTPUT:
+Enter any string:reddy
+
+['r', 'e', 'd', 'd', 'y']
+
+
+4.write a python program to convert list to a tuple datatype
+x=input("enter any number of your choice:").split()
+
+t=tuple(x)
+
+print("the list is:",x)
+
+print("the tuple is:",t)
+SAMPLE OUTPUT:
+enter any number of your choice:23 43 56 75
+the list is: ['23', '43', '56', '75']
+
+the tuple is: ('23', '43', '56', '75')
+
+5.write a python program to print list elements index wise(both index)
+Program:
+ls=[10,20,"python",80+90j]
+
+x=len(ls)
+
+for i in range(x):
+
+   print(ls[i]," is available at positive index:",i,"and negative index is at:",i-x)
+
+SAMPLE OUTPUT:
+10  is available at positive index: 0 and negative index is at: -4
+
+20  is available at positive index: 1 and negative index is at: -3
+
+python  is available at positive index: 2 and negative index is at: -2
+
+(80+90j)  is available at positive index: 3 and negative index is at: -1
+
+
+
+6.write a python program to create a list and store the list elements
+Program:
+ls=[]
+
+ls.append(1)
+
+ls.append(2)
+
+ls.append(3)
+
+print(ls)
+SAMPLE OUTPUT:
+[1, 2, 3]
+
+7.write a python program to accessing and remove the elements from a list
+PROGRAM:
+l=[10,20,30,"milky",(10+20j),True,1]
+
+print(l[3])
+
+print(l[-2])
+
+print(l[1:4])
+
+print(l)
+
+l.remove(20)
+
+print(l)
+SAMPLE OUTPUT:
+milky
+
+True
+
+[20, 30, 'milky']
+
+[10, 20, 30, 'milky', (10+20j), True, 1]
+
+[10, 30, 'milky', (10+20j), True, 1]
+
+
+8.write a python program to find min and max length of a list
+PROGRAM:
+l=[10,20,30,40,50,True,1]
+
+print(len(l))
+
+print(l)
+
+print(max(l))
+
+print(min(l))
+SAMPLE OUTPUT:
+7
+
+[10, 20, 30, 40, 50, True, 1]
+
+50
+
+True
+
+9.write a python program to accept N numbers and store them in list,then print the list without odd numbers in it.
+PROGRAM:
+n=int(input("enter the value of n:"))
+
+mylist=[]
+
+for i in range(n):
+
+  num=int(input("enter a number:"))
+
+mylist.append(num)
+
+print("even numbers are")
+
+print("[",end=",")
+
+for num in mylist:
+
+    if num%2==0:
+
+        print(num,end=",")
+
+        print("]")
+SAMPLE OUTPUT:
+enter the value of n:5
+
+enter a number:1
+
+enter a number:2
+
+enter a number:3
+
+enter a number:4
+enter a number:5
+
+even numbers are
+
+[2,4]
+
+10.write a python program to remove specific element,reverse the list,copy the list into another list
+PROGRAM:
+list=[10,20,30,"milky",True,0,(10+20j),False,1,True]
+
+print(list)
+
+x=list.copy()
+
+print(x)
+
+list.pop(3)
+
+print(list)
+
+del list[2]
+
+print(list)
+
+list.reverse()
+
+print(list)
+
+list.clear()
+
+print(list)
+SAMPLE OUTPUT:
+[10, 20, 30, 'milky', True, 0, (10+20j), False, 1, True]
+
+[10, 20, 30, 'milky', True, 0, (10+20j), False, 1, True]
+
+[10, 20, 30, True, 0, (10+20j), False, 1, True]
+
+[10, 20, True, 0, (10+20j), False, 1, True]
+
+[True, 1, False, (10+20j), 0, True, 20, 10]
+
+[]
