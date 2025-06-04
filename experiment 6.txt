@@ -1,0 +1,94 @@
+1.write a python program function that creates and returns an object
+PROGRAM:
+class car:
+
+    def __init__(self,brand,speed):
+
+        self.brand=brand
+
+        self.speed=speed
+
+    def display(self):
+
+        print(f"brand:{self.brand}speed:{self.speed}km/h")
+
+    def create_car():
+
+        car1=car("Toyota",180)
+
+        return car1
+
+my_car=car.create_car()
+
+my_car.display()
+SAMPLE OUTPUT:
+brand:Toyotaspeed:180km/h
+
+2.write a fuction that takes a student object as an argument and prints the students
+information
+PROGRAM:
+class Student:
+
+    def __init__(self,name,marks):
+
+        self.name=name
+ 
+        self.marks=marks
+
+    def print_student_info(self):
+
+            print(f"name:{self.name}marks:{self.marks}")
+
+s1=Student("tillu",92)
+
+s1.print_student_info()
+SAMPLE OUTPUT:
+name:tillumarks:92
+
+3.write a fuction that returns a circle object created with a given radius
+PROGRAM:
+class Circle:
+
+    def __init__(self,radius):
+
+        self.radius=radius
+
+    def area(self):
+
+        return 3.14*self.radius*self.radius
+
+    def get_circle(r):
+
+        return Circle(r)
+
+c=Circle.get_circle(5)
+
+print("area of circle:",c.area())
+SAMPLE OUTPUT:
+
+area of circle: 78.5
+
+4.write a function that returns a list of 3 book objects
+PROGRAM:
+class Book:
+
+    def __init__(self,title):
+
+        self.title=title
+
+    def create_book_list():
+
+            return[Book("python 101"),Book("AI Basics"),Book("Data science")]
+
+books=Book.create_book_list()
+
+for b in books:
+
+    print("Book title:",b.title)
+SAMPLE OUTPUT: 
+Book title: python 101
+
+Book title: AI Basics
+
+Book title: Data science
+           
