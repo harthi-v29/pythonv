@@ -1,0 +1,108 @@
+1.write a python program to merge the two dictionaries
+PROGRAM:
+d1={10:"python",20:"java"}
+
+d2={30:"c",40:"ruby"}
+
+d3=d1|d2
+print(d3)
+
+print(type(d3))
+SAMPLE OUTPUT:
+{10: 'python', 20: 'java', 30: 'c', 40: 'ruby'}
+<class 'dict'>
+
+
+2.write a pytho program to perform iteration using dictionary
+PROGRAM:
+d={"apple":5,"banana":10,"orange":8}
+for k in d:
+
+    print(k)
+
+for v in d.values():
+
+    print(v)
+
+for k,v in d.items():
+
+        print(k,"------->",k)
+SAMPLE OUTPUT:
+apple
+
+banana
+
+orange
+
+5
+
+10
+
+8
+
+apple -------> apple
+
+banana -------> banana
+
+orange -------> orange
+
+
+3.write a python progam to convert set into dictionary type
+PROGRAM:
+fruits={"apple","banana","orange"}
+
+fruits_dict={fruit:index for index,fruit in enumerate(fruits)}
+
+print(fruits_dict)
+SAMPLE OUTPUT:
+{'banana': 0, 'apple': 1, 'orange': 2}
+
+4.write a pyhton program to delete multiples elements in a dictionary
+PROGRAM:
+d={"apple":5,"banana":10,"orange":8,"mango":15}
+
+kd=["apple","banana"]
+
+for k in kd:
+
+    if k in d:
+
+        del d[k]
+
+        print(d)
+SAMPLE OUTPUT:
+{'banana': 10, 'orange': 8, 'mango': 15}
+
+{'orange': 8, 'mango': 15}
+
+5.how to perform arithmetic operations on the values of a dictionary
+PROGRAM:
+d1={"sub1":80,"sub2":90,"sub3":70,"sub4":80}
+
+print(d1)
+s=sum(d1.values())
+
+print(s)
+
+mx=max(d1.values())
+
+print(mx)
+
+mn=min(d1.values())
+
+print(mn)
+
+cnt=len(d1.values())
+
+print(cnt)
+SAMPLE OUTPUT:
+{'sub1': 80, 'sub2': 90, 'sub3': 70, 'sub4': 80}
+
+320
+
+90
+
+70
+
+4
+
