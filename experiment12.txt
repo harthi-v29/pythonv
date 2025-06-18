@@ -126,3 +126,68 @@ I'm a protected attribute
 I'm a protected method
 
 
+4.write a python program to perform encapsulations
+PROGRAM:
+class BankAccount:
+
+    def __init__(self,account_number,balance):
+
+        self.account_number=account_number
+
+        self.balance=balance
+ 
+   def get_account_number(self):
+
+        return self.account_number
+
+    def get_balance(self):
+
+         return self.balance
+
+    def deposit(self,amount):
+
+        if amount>0:
+
+          self.balance+=amount
+
+          print("Deposit successful")
+
+        else:
+
+            print("Invalid amount for deposit")
+
+    def withdraw(self,amount):
+
+        if amount>0 and amount<=self.balance:
+
+            self.balance=amount
+
+            print("withdrawal successful")
+
+        else:
+
+            print("Insufficient funds or Invalid amount for withdrawal")
+
+account=BankAccount("1234567890",1000)
+
+print("account number",account.get_account_number())
+
+print("Balance:",account.get_balance())
+
+account.deposit(500)
+
+account.withdraw(200)
+
+account.account_number="9876543210"
+
+account_balance=5000
+
+print("Account number",account.get_account_number())
+
+print("Balance:",account.get_balance())
+SAMPLE OUTPUT:
+account number 1234567890
+
+Balance: 1000
+
+Deposit successful
