@@ -33,13 +33,11 @@ meow
 
 bow
 
-2.write a pyhton program to perform inheritance
+2.write a python program to perform inheritance
 PROGRAM:
 class Shape:
-
-    def __init__(self,color):
-
-        self.color=color
+def __init__(self,color):
+   self.color=color
 
     def area(self):
 
