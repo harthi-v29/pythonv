@@ -1,0 +1,130 @@
+1.write a python program to perform polymorphism
+PROGRAM:
+class Animal:
+
+    def sound(self):
+
+        pass
+class Cat(Animal):
+
+    def sound(self):
+
+        print("meow")
+
+class Dog(Animal):
+
+    def sound(self):
+
+        print("bow")
+
+def make_sound(animal):
+
+    animal.sound()
+
+cat=Cat()
+
+dog=Dog()
+
+make_sound(cat)
+
+make_sound(dog)
+SAMPLE OUTPUT:
+meow
+
+bow
+
+2.write a pyhton program to perform inheritance
+PROGRAM:
+class Shape:
+
+    def __init__(self,color):
+
+        self.color=color
+
+    def area(self):
+
+            pass
+class Circle(Shape):
+
+    def __init__(self,color,radius):
+
+        super().__init__(color)
+
+        self.radius=radius
+
+    def area(self):
+
+        return 3.14*self.radius**2
+class
+ Rectangle(Shape):
+
+    def __init__(self,color,width,height):
+super().__init__(color)
+
+        self.width=width
+
+        self.height=height
+
+    def area(self):
+
+        return self.width*self.height
+circle=Circle("red",5)
+
+rectangle=Rectangle("blue",4,6)
+
+print("Circle area:",circle.area())
+
+print("Rectangle area:",rectangle.area())
+SAMPLE OUTPUT:
+Circle area: 78.5
+
+Rectangle area: 24
+
+
+3.write a python program to perform attributes&methods
+PROGRAM:
+class Myclass:
+
+    def __init__(self):
+
+        self.public_attribute="I'm a public attribute"
+
+        self._protected_attribute="I'm a protected attribute"
+
+        self.__private_attribute="I'm a private attribute"
+
+    def public_method(self):
+
+        print("I'm a public method")
+
+    def _protected_method(self):
+
+        print("I'm a protected method")
+
+    def __private_method(self):
+
+        print("I'm a private method")
+
+obj=Myclass()
+print(obj.public_attribute)
+
+obj.public_method()
+
+print(obj._Myclass__private_attribute)
+obj._Myclass__private_method()
+print(obj._protected_attribute)
+
+obj._protected_method()
+SAMPLE OUTPUT:
+I'm a public attribute
+
+I'm a public method
+
+I'm a private attribute
+
+I'm a private method
+I'm a protected attribute
+
+I'm a protected method
+
+
